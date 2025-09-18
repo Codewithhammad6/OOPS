@@ -9,9 +9,9 @@ private:
 public:
     int b;
 
-    Calculator() {           // non parametrize 
-       a = 10;
-       b = 5;
+    Calculator(int m, int n) {           //parametrize 
+       a = m;
+       b = n;
     }
 
     void sum() {
@@ -22,7 +22,7 @@ public:
 };
 
 int main() {
-    Calculator c;
+    Calculator c(10,5);
     c.sum();
     
     return 0;
