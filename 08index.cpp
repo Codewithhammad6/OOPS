@@ -28,8 +28,10 @@ public:
 };
 
 int main() {
-  {  Calculator c(10,5);
-    c.sum();}
+  {  
+    Calculator c(10,5);
+    c.sum();
+  }
     cout << "This is main" << endl;
 
 //    Calculator c1(10);
