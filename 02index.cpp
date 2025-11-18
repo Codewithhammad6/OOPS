@@ -6,7 +6,7 @@ public:
     string name;
     int rollNumber;
     string department;
-
+ 
     void displayInfo() {
         cout << "Student Name: " << name << endl;
         cout << "Roll Number: " << rollNumber << endl;
