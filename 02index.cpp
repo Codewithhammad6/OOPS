@@ -10,7 +10,7 @@ public:
     void displayInfo() {  
         cout << "Student Name: " << name << endl;
         cout << "Roll Number: " << rollNumber << endl;
-        cout << "Department: " << department << endl;
+        cout << "Department: " << department << endl; 
     }
 };
 
