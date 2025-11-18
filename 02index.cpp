@@ -5,7 +5,7 @@ class Student {
 public:
     string name;
     int rollNumber;
-    string department;
+    string department; 
  
     void displayInfo() {  
         cout << "Student Name: " << name << endl;
