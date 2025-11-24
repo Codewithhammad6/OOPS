@@ -40,25 +40,25 @@
 
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-class Student {
-public:
-    static int count;   // static data member
+// class Student {
+// public:
+//     static int count;   // static data member
 
-    Student() {
-        count++;        // increase when new object created
-    }
-};
+//     Student() {
+//         count++;        // increase when new object created
+//     }
+// };
 
-int Student::count = 0; // initialize static variable
+// int Student::count = 0; // initialize static variable
 
-int main() {
-    Student s1, s2, s3;
-    cout << "Total students: " << Student::count;
-    return 0;
-}
+// int main() {
+//     Student s1, s2, s3;
+//     cout << "Total students: " << Student::count;
+//     return 0;
+// }
 
 
 
