@@ -1,33 +1,72 @@
 //                                           operater overloading 
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-class Distance {
-public:
-    int meter;
+// class Distance {
+// public:
+//     int meter;
 
-    Distance(int m = 0) {
-        meter = m;
-    }
+//     Distance(int m = 0) {
+//         meter = m;
+//     }
 
-    // operator overloading
-    Distance operator+(Distance obj) {
-        Distance temp;
-        temp.meter = meter + obj.meter;
-        return temp;
-    }
-};
+//     // operator overloading
+//     Distance operator+(Distance obj) {
+//         Distance temp;
+//         temp.meter = meter + obj.meter;
+//         return temp;
+//     }
+// };
 
-int main() {
-    Distance d1(5);
-    Distance d2(7);
+// int main() {
+//     Distance d1(5);
+//     Distance d2(7);
 
-    Distance d3 = d1 + d2;  // yahan operator+ call hoga
+//     Distance d3 = d1 + d2;  // yahan operator+ call hoga
 
-    cout << "Total = " << d3.meter << " meters";
-}
+//     cout << "Total = " << d3.meter << " meters";
+// }
+
+
+
+
+
+// #include <iostream>
+// using namespace std;
+
+// class Distance {
+// public:
+//     int meter;
+//     int num;
+
+//     Distance(int m = 0 , int n =0) {
+//         meter = m;
+//         num = n;
+//     }
+
+//     // operator overloading
+// Distance operator+ (const Distance& obj){
+//     Distance temp;
+//      temp.meter = meter + obj.meter;
+//      temp.num = num + obj.num;
+//      return temp;
+// }
+// void print(){
+// cout<<meter<<" + "<<num<<endl;
+// }
+
+// };
+
+// int main() {
+//     Distance d1(5,2);
+//     Distance d2(7,3);
+
+//     Distance d3 = d1 + d2;  // yahan operator+ call hoga
+
+//     d3.print();
+// }
 
 
 
