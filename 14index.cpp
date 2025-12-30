@@ -38,29 +38,29 @@ int main() {
 
 
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// class Distance {
-// public:
-//     int meter;
+class Distance {
+public:
+    int meter;
 
-//     Distance(int m = 0) : meter(m) {}
+    Distance(int m = 0) : meter(m) {}
 
-//     // const used in both parameter & function
-//     Distance operator+(const Distance &obj) const {
-//         return Distance(meter + obj.meter);
-//     }
-// };
+    // const used in both parameter & function
+    Distance operator+(const Distance &obj) const {
+        return Distance(meter + obj.meter);
+    }
+};
 
-// int main() {
-//     Distance d1(5);
-//     Distance d2(7);
+int main() {
+    Distance d1(5);
+    Distance d2(7);
 
-//     Distance d3 = d1 + d2;
+    Distance d3 = d1 + d2;
 
-//     cout << d3.meter;
-// }
+    cout << d3.meter;
+}
 
 
 
