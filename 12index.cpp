@@ -1,7 +1,6 @@
 // #include <iostream>
 // using namespace std;
 
-
 // class Person {
 //     public:
 //     string name;
@@ -12,7 +11,6 @@
 // class Faculty:public Person {
 //     public:
 //     string destination;
-   
 
     
 //     void show() {
@@ -136,7 +134,6 @@
 //     string destination;
    
 // };
-
 
 
 // class Professor:public Faculty {
@@ -306,7 +303,7 @@
 //     return 0;
 // }
 
-
+  
 
 
 
@@ -396,73 +393,73 @@
 
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-// Base Class A
-class A {
-protected:
-    int count;
+// // Base Class A
+// class A {
+// protected:
+//     int count;
 
-public:
-    A() {
-        count = 0;
-        cout << "Constructor of A called" << endl;
-    }
+// public:
+//     A() {
+//         count = 0;
+//         cout << "Constructor of A called" << endl;
+//     }
 
-    void increment() {
-        count++;
-    }
+//     void increment() {
+//         count++;
+//     }
 
-    void display() {
-        cout << "Count (from A): " << count << endl;
-    }
-};
+//     void display() {
+//         cout << "Count (from A): " << count << endl;
+//     }
+// };
 
-class B : virtual public A {
-public:
-    B() {
-        cout << "Constructor of B called" << endl;
-    }
+// class B : virtual public A {
+// public:
+//     B() {
+//         cout << "Constructor of B called" << endl;
+//     }
 
-    void showB() {
-        cout << "Inside class B" << endl;
-    }
-};
+//     void showB() {
+//         cout << "Inside class B" << endl;
+//     }
+// };
 
-// Derived Class C (inherits A)
-class C : virtual public A {
-public:
-    C() {
-        cout << "Constructor of C called" << endl;
-    }
+// // Derived Class C (inherits A)
+// class C : virtual public A {
+// public:
+//     C() {
+//         cout << "Constructor of C called" << endl;
+//     }
 
-    void showC() {
-        cout << "Inside class C" << endl;
-    }
-};
+//     void showC() {
+//         cout << "Inside class C" << endl;
+//     }
+// };
 
-// Derived Class D (inherits from B and C)
-class D : public B, public C {
-public:
-    D() {
-        cout << "Constructor of D called" << endl;
-    }
+// // Derived Class D (inherits from B and C)
+// class D : public B, public C {
+// public:
+//     D() {
+//         cout << "Constructor of D called" << endl;
+//     }
 
-    void showD() {
-        cout << "Inside class D" << endl;
-    }
-};
+//     void showD() {
+//         cout << "Inside class D" << endl;
+//     }
+// };
 
-int main() {
-    cout << "=== Object of D Created ===" << endl;
-    D obj;     // Object of D
+// int main() {
+//     cout << "=== Object of D Created ===" << endl;
+//     D obj;     // Object of D
 
-    obj.increment(); 
-    obj.showB();
-    obj.showC();
-    obj.showD();
-    obj.display();
+//     obj.increment(); 
+//     obj.showB();
+//     obj.showC();
+//     obj.showD();
+//     obj.display();
 
-    return 0;
-}
+//     return 0;
+// }

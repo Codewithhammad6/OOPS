@@ -54,77 +54,79 @@
 // class Employe {
 
 // public:
-    //   virtual void work() {
-    //     cout << "Employ is working" << endl;
-    // }
- 
-// };
-
-// class Professor :  public Employe {
-// public:
-
-//     void work() {
-//         cout << "Professor is teaching" << endl;
-//     }
-// };
-
-
-// int main() {
-//    Employe E ;
-//   E.work();
-
-//     return 0;
-// }
-
-
-
-
-
-
-
-
-// #include <iostream>
-// using namespace std;
-
-// class Employe {
-
-// public:
 //       virtual void work() {
 //         cout << "Employ is working" << endl;
 //     }
- 
 // };
 
 // class Professor :  public Employe {
 // public:
 
-//     void work() {
+//     void work() override {
 //         cout << "Professor is teaching" << endl;
-//     }
-// };
-
-// class Admin :  public Employe {
-// public:
-
-//     void work() {
-//         cout << "Admin is managing" << endl;
 //     }
 // };
 
 
 // int main() {
 //    Employe* E ;
-//    Professor P;
-//    Admin A;
+//   Professor P;
 
-//   E = &P;
-//   E->work();
-
-//   E = &A;
-//   E->work();
+// E = &P;
+// E->work();
 
 //     return 0;
 // }
+
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Employe {
+
+public:
+      virtual void work() {
+        cout << "Employ is working" << endl;
+    }
+ 
+};
+
+class Professor :  public Employe {
+public:
+
+    void work() override {
+        cout << "Professor is teaching" << endl;
+    }
+};
+
+class Admin :  public Employe {
+public:
+
+    void work() override {
+        cout << "Admin is managing" << endl;
+    }
+};
+
+
+int main() {
+   Employe* E ;
+   Professor P;
+   Admin A;
+
+  E = &P;
+  E->work();
+
+  E = &A;
+  E->work();
+
+    return 0;
+}
 
 
 
@@ -211,37 +213,37 @@
 
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-class Employe {
+// class Employe {
 
-public:
-      virtual void work() = 0 ;
-};
+// public:
+//       virtual void work() = 0 ;
+// };
 
-class Professor :  public Employe {
-public:
+// class Professor :  public Employe {
+// public:
 
-    void work() override  {
-        cout << "Professor is teaching" << endl;
-    }
-    void details()  {
-        cout << "Professor details" << endl;
-    }
-};
-
-
-int main() {
-   Employe* E;
-   Professor P;
-    E = &P;
-  E->work();
-  P.details();
+//     void work() override  {
+//         cout << "Professor is teaching" << endl;
+//     }
+//     void details()  {
+//         cout << "Professor details" << endl;
+//     }
+// };
 
 
-    return 0;
-}
+// int main() {
+//    Employe* E;
+//    Professor P;
+//     E = &P;
+//   E->work();
+//   P.details();
+
+
+//     return 0;
+// }
 
 
 
